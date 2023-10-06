@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "styler"
+version = "0.1.0"
+description = ""
+authors = ["Illia Kravets <illia.kravets@mint.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dependency-injector = "^4.41.0"
+fastapi = "^0.100.0"
+pydantic = "==1.10.11"
+sqlalchemy = "==1.4.41"
+sqlmodel = "==0.0.8"
+uvicorn = "^0.22.0"
+asyncpg = "^0.28.0"
+python-dotenv = "^1.0.0"
+psycopg-binary = "^3.1.9"
+alembic = "^1.7.1"
+styler_utils = {path = "/Users/illia/projects/styler/styler_utils/", develop = true}
+fastapi_management = {path = "/Users/illia/projects/styler/fastapi_management/", develop = true}
+greenlet = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
